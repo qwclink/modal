@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Афлятунова | 2 макет</title>
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="container__title">Модальные окна</h2>
+
+      <div class="card__container">
+        <article>
+          <div class="card__product">
+            <div>
+              <h3 class="card__name"><i class="fa-solid fa-user"></i></h3>
+            </div>
+          </div>
+
+          <div class="modal">
+            <div class="modal__card">
+              <i class="ri-close-large-line modal__close"></i>
+
+              <!-- Переключатели -->
+              <div class="modal__tabs">
+                <button class="modal__tab active" data-tab="login">Авторизация</button>
+                <button class="modal__tab" data-tab="register">Регистрация</button>
+              </div>
+
+              <!-- Контейнер с формами -->
+              <div class="modal__content">
+
+                <!-- Форма Вход -->
+                <div class="modal__form modal__form--active" data-content="login">
+                  <div class="modal__input">
+                    <label for="number">Телефон</label>
+                    <input
+                      id="number"
+                      name="number"
+                      type="text"
+                      placeholder="8 (988) 888-88-88"
+                    />
+                  </div>
+                  <div class="modal__input">
+                    <label for="reg-email">Email</label>
+                    <input
+                      id="reg-email"
+                      name="reg-email"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="modal__button">Вход</div>
+                  <p><a href="#">или</a></p>
+                  <i class="fa-brands fa-telegram"></i>
+                  <i class="fa-brands fa-vk"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+
+                <!-- Форма Регистрация -->
+                <div class="modal__form" data-content="register">
+                  <div class="modal__input">
+                    <label for="reg-phone">Телефон</label>
+                    <input
+                      id="reg-phone"
+                      name="reg-phone"
+                      type="text"
+                      placeholder="8 (988) 888-88-88"
+                    />
+                  </div>
+                  <div class="modal__input">
+                    <label for="reg-email">Email</label>
+                    <input
+                      id="reg-email"
+                      name="reg-email"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="modal__input">
+                    <label for="reg-password">Пароль</label>
+                    <input
+                      id="reg-password"
+                      name="reg-password"
+                      type="password"
+                      placeholder="Введите пароль"
+                    />
+                  </div>
+
+                  <div class="modal__button">Зарегистрироваться</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

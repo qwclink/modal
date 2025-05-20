@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Афлятунова | 1 макет</title>
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="container__title">Модальные окна</h2>
+
+      <div class="card__container">
+        <article>
+          <div class="card__product">
+            <div>
+              <h3 class="card__name">Войти</h3>
+            </div>
+          </div>
+
+          <div class="modal">
+            <div class="modal__card">
+              <i class="ri-close-large-line modal__close"></i>
+              <div>
+                <h3 class="modal__name">Вход</h3>
+                <div class="modal__input">
+                  <label for="number">телефон</label>
+                  <input
+                    name="number"
+                    type="text"
+                    placeholder="8 (988) 888-88-88"
+                  />
+                </div>
+                <div class="modal__button">Вход</div>
+              </div>
+
+              <div class="modal__buttons">
+                <button class="modal__button modal__button-ghost">
+                  Регистрация
+                </button>
+                <p><a href="#">Забыли пароль?</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="card__product">
+            <div>
+              <h3 class="card__name">Комментарии</h3>
+            </div>
+          </div>
+
+          <div class="modal">
+            <div class="modal__card">
+              <i class="ri-close-large-line modal__close"></i>
+              <div>
+                <h3 class="modal__name">Комментарии</h3>
+                <div class="modal__input">
+                  <label for="comm">Дмирий (курьер) 21.01.2021</label>
+                  <div class="comm"> У клиента были гнилые половина помидоров. Он сказал возьмет их. Надо возместить бонусами.
+                </div>
+                </div>
+                <div class="modal__input">
+                  <label for="comm2">Анна (менеджер) 22.02.2021</label>
+                  <div class="comm">Созвонились с клиентом. Я начислила 50 баллов.</div>
+                </div>
+                <div class="modal__input">
+                  <input
+                    class="input-comm"
+                    name="comm"
+                    type="textarea"
+                    placeholder="Введите комментарий.."
+                  />
+                </div>
+
+                <div class="modal__button">Отправить</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
